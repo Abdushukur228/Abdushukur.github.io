@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" id="productsMenu">Mahsulotlar</a></li>
+            <li><a href="#" id="addProductMenu">Mahsulot kiritish</a></li>
+        </ul>
+    </nav>
+    <div id="productsPage" class="page">
+        <h1>Mahsulotlar</h1>
+        <div id="productList"></div>
+    </div>
+    <div id="addProductPage" class="page">
+        <h1>Mahsulot kiritish</h1>
+        <form id="productForm">
+            <label for="productImage">Rasm kiriting:</label>
+            <input type="file" id="productImage" required><br>
+            <label for="productName">Mahsulot nomini yozing:</label>
+            <input type="text" id="productName" required><br>
+            <label for="productRegion">Siz qaysi viloyatdan:</label>
+            <input type="text" id="productRegion" required><br>
+            <label for="phoneNumber">Telefon nomeriz nima:</label>
+            <input type="text" id="phoneNumber" required><br>
+            <label for="productPrice">Mahsulotni narxi:</label>
+            <input type="number" id="productPrice" required><br>
+            <button type="button" id="submitProduct">Tasdiqlash</button>
+        </form>
+    </div>
+    <div id="passwordPrompt" class="page">
+        <h1>Parolni kiriting</h1>
+        <form id="passwordForm">
+            <input type="password" id="passwordInput" required>
+            <button type="button" id="submitPassword">Tasdiqlash</button>
+        </form>
+    </div>
+    <div id="deletePasswordPrompt" class="page">
+        <h1>Parolni kiriting</h1>
+        <form id="deletePasswordForm">
+            <input type="password" id="deletePasswordInput" required>
+            <button type="button" id="submitDeletePassword">Tasdiqlash</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
